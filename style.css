@@ -336,15 +336,6 @@ nav ul li a:hover {
     box-shadow: 0 0 15px #00f;
 }
 
-.faq-card p {
-    display: none;
-    margin-top: 10px;
-}
-
-.faq-card.active p {
-    display: block;
-}
-
 /* Testimonials */
 .testimonials {
     padding: 100px 50px;
@@ -474,27 +465,17 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    padding: 50px;
+    padding: 40px 50px;
     background: #000;
     text-align: center;
     color: #fff;
-    border-top: 2px solid #00f;
-}
-
-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-footer .footer-content p {
-    font-size: 1rem;
-    font-weight: 500;
+    position: relative;
 }
 
 footer .social-icons {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -502,12 +483,10 @@ footer .social-icons img {
     width: 30px;
     filter: invert(100%);
     transition: all 0.3s;
-    cursor: pointer;
 }
 
 footer .social-icons img:hover {
     filter: invert(30%) sepia(100%) hue-rotate(200deg);
-    transform: scale(1.2);
 }
 
 /* Responsive */
@@ -532,7 +511,6 @@ footer .social-icons img:hover {
         gap: 15px;
     }
 }
-
 /* Fade-in animation for sections */
 section {
     opacity: 0;
@@ -545,7 +523,26 @@ section.visible {
     transform: translateY(0);
 }
 
-/* Gamification & Hydration Game */
+/* FAQ toggle */
+.faq-card p {
+    display: none;
+    margin-top: 10px;
+}
+.faq-card.active p {
+    display: block;
+}
+.gamification {
+    padding: 100px 50px;
+    background: #000;
+    text-align: center;
+}
+
+.gamification h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00f;
+}
+
 .bottle-container {
     margin: 40px auto;
     width: 100px;
@@ -555,6 +552,12 @@ section.visible {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+}
+
+.bottle {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .water {
@@ -590,10 +593,25 @@ section.visible {
     color: #00f;
     font-weight: 600;
 }
+.customize {
+    padding: 100px 50px;
+    background: #111;
+    text-align: center;
+}
 
-/* Customize Bottle Feature */
-.bottle-preview {
-    position: relative;
+.customize h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00f;
+}
+
+.customize-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .bottle-preview img {
@@ -603,15 +621,9 @@ section.visible {
     transition: all 0.3s ease;
 }
 
-#custom-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    font-weight: bold;
-    color: #00f;
-    pointer-events: none;
+.customize-options {
+    max-width: 300px;
+    text-align: left;
 }
 
 .color-options {
@@ -676,8 +688,85 @@ section.visible {
     color: #00f;
     box-shadow: 0 0 25px #00f;
 }
+footer {
+    padding: 50px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-top: 2px solid #00f;
+}
 
-/* Countdown Timer */
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .footer-content p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    filter: invert(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+footer .social-icons img:hover {
+    filter: invert(30%) sepia(100%) hue-rotate(200deg);
+    transform: scale(1.2);
+}
+
+/* Responsive Footer */
+@media(max-width: 600px) {
+    footer .social-icons {
+        gap: 15px;
+    }
+}
+.thank-you {
+    padding: 30px 20px;
+    background: #0a0a0a;
+    text-align: c
+/* Smooth water fill already added */
+.water {
+  transition: height 0.5s ease;
+}
+
+/* Bottle preview text overlay */
+.bottle-preview {
+  position: relative;
+}
+#custom-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #00f;
+  pointer-events: none;
+}
+#countdown {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #00f;
+    text-align: center;
+    font-weight: 600;
+}
+
+#countdown .timer {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
 #countdown {
     margin-top: 30px;
     font-size: 1.5rem;
@@ -695,11 +784,19 @@ section.visible {
 }
 
 @keyframes glowPulse {
-    0% { text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00bfff; color: #00f; }
-    50% { text-shadow: 0 0 10px #00f, 0 0 20px #00bfff, 0 0 30px #00bfff; color: #0ff; }
-    100% { text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00bfff; color: #00f; }
+    0% {
+        text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00bfff;
+        color: #00f;
+    }
+    50% {
+        text-shadow: 0 0 10px #00f, 0 0 20px #00bfff, 0 0 30px #00bfff;
+        color: #0ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00bfff;
+        color: #00f;
+    }
 }
-
 #countdown .timer span {
     display: inline-block;
     animation: bounce 1s infinite;

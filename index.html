@@ -3,14 +3,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Chillmate </title>
+    <title>Chillmate Website </title>
     <link rel="stylesheet" href="./style.css">
 
   </head>
     
   <body>
-  <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +19,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <div class="logo">ChillMate</div>
@@ -121,19 +119,25 @@
     <h2>Get Your ChillMate Today</h2>
     <p>Order now and be among the first to experience smart hydration!</p>
     <form id="preorder-form">
-      <input type="text" id="preorder-name" placeholder="Your Name" required>
-      <input type="email" id="preorder-email" placeholder="Your Email" required>
-      <input type="number" id="preorder-quantity" placeholder="Quantity" required>
-      <button type="submit" class="cta-btn">Pre-order Now</button>
-    </form>
-    <h3>Pre-order ends in:</h3>
-    <div class="timer">
-      <span id="days">00</span> Days 
-      <span id="hours">00</span> Hours 
-      <span id="minutes">00</span> Minutes 
-      <span id="seconds">00</span> Seconds
-    </div>
-  </section>
+    <input type="text" id="preorder-name" placeholder="Your Name" required>
+    <input type="email" id="preorder-email" placeholder="Your Email" required>
+    <input type="number" id="preorder-quantity" placeholder="Quantity" required>
+    <button id="preorder-btn"<button class="cta-btn">Pre-order Now</button>
+  </section><div 
+
+  <input type="text" i
+  <button id="preorder-btn">
+    
+               
+  <h3>Pre-order ends in:</h3>
+  <div class="timer">
+    <span id="days">00</span> Days 
+    <span id="hours">00</span> Hours 
+    <span id="minutes">00</span> Minutes 
+    <span id="seconds">00</span> Seconds
+  </div>
+</div>
+
 
   <!-- Contact -->
   <section id="contact" class="contact">
@@ -146,63 +150,62 @@
     </form>
   </section>
 
-  <!-- Gamification & Customize Section -->
-  <section id="gamification" class="gamification">
-    <h2>Hydration Challenge</h2>
-    <p>Click the button to fill your ChillMate bottle! Stay hydrated & win badges.</p>
-    <div class="bottle-container">
-      <div class="bottle">
-        <div class="water"></div>
-      </div>
-    </div>
-    <button id="fill-btn">Drink Water</button>
-    <p id="level-text">Water Level: 0%</p>
-  </section>
-
-  <section id="customize" class="customize">
-    <h2>Customize Your ChillMate</h2>
-    <p>Create your unique ChillMate bottle with your favorite color and style!</p>
-    <div class="customize-container">
-      <div class="bottle-preview">
-        <img id="bottle-img" src="images/chillmate.png" alt="ChillMate Bottle">
-      </div>
-      <div class="customize-options">
-        <h3>Choose Color:</h3>
-        <div class="color-options">
-          <div class="color-circle" data-color="black" style="background:#111;"></div>
-          <div class="color-circle" data-color="red" style="background:#f00;"></div>
-          <div class="color-circle" data-color="white" style="background:#fff; border: 2px solid #00f;"></div>
-          <div class="color-circle" data-color="blue" style="background:#00bfff;"></div>
-        </div>
-        <h3>Add Pattern:</h3>
-        <div class="pattern-options">
-          <button data-pattern="none">None</button>
-          <button data-pattern="stripes">Stripes</button>
-          <button data-pattern="dots">Dots</button>
-          <button data-pattern="waves">Waves</button>
-        </div>
-        <h3>Add Your Name:</h3>
-        <input type="text" id="custom-text" placeholder="Your Name Here">
-        <button id="apply-custom">Preview</button>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 ChillMate. All Rights Reserved.</p>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/leelanshuupadhyay.official/?__pwa=1" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-      </div>
+    <section id="gamification" class="gamification">
+  <h2>Hydration Challenge</h2>
+  <p>Click the button to fill your ChillMate bottle! Stay hydrated & win badges.</p>
+  <div class="bottle-container">
+    <div class="bottle">
+      <div class="water"></div>
     </div>
-    <section class="thank-you">
-      <p>Thank you for visiting ChillMate! Stay hydrated and enjoy the smart lifestyle.</p>
-    </section>
-  </footer>
+  </div>
+  <button id="fill-btn">Drink Water</button>
+  <p id="level-text">Water Level: 0%</p>
+</section>
+<section id="customize" class="customize">
+  <h2>Customize Your ChillMate</h2>
+  <p>Create your unique ChillMate bottle with your favorite color and style!</p>
 
-</body>
-</html>
+  <div class="customize-container">
+    <div class="bottle-preview">
+      <img id="bottle-img" src="images/chillmate.png" alt="ChillMate Bottle">
+    </div>
+
+    <div class="customize-options">
+      <h3>Choose Color:</h3>
+      <div class="color-options">
+        <div class="color-circle" data-color="black" style="background:#111;"></div>
+        <div class="color-circle" data-color="red" style="background:#f00;"></div>
+        <div class="color-circle" data-color="Black" style="background:#fff; border: 2px solid #00f;"></div>
+        <div class="color-circle" data-color="blue" style="background:#00bfff;"></div>
+      </div>
+
+      <h3>Add Pattern:</h3>
+      <div class="pattern-options">
+        <button data-pattern="none">None</button>
+        <button data-pattern="stripes">Stripes</button>
+        <button data-pattern="dots">Dots</button>
+        <button data-pattern="waves">Waves</button>
+      </div>
+
+      <h3>Add Your Name:</h3>
+      <input type="text" id="custom-text" placeholder="Your Name Here">
+      <button id="apply-custom">Preview</button>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 ChillMate. All Rights Reserved.</p>
+    <div class="social-icons">
+   
+      <a href=https://www.instagram.com/leelanshuupadhyay.official/?__pwa=1 target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+   <!-- Thank You Section -->
+<section class="thank-you">
+  <p>Thank you for visiting ChillMate! Stay hydrated and enjoy the smart lifestyle.</p>
+</section>
     <script  src="./script.js"></script>
 
   </body>

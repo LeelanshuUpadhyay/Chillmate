@@ -35,7 +35,7 @@ preorderBtn.forEach(btn => {
     });
 });
 
-// Fade-in sections on scroll
+// Optional: Fade-in sections on scroll
 const sections = document.querySelectorAll('section');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -44,14 +44,15 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, { threshold: 0.2 });
+
 sections.forEach(section => {
     observer.observe(section);
 });
-
 // Hydration Game
 const fillBtn = document.getElementById('fill-btn');
 const water = document.querySelector('.water');
 const levelText = document.getElementById('level-text');
+
 let level = 0; // initial water level
 
 fillBtn.addEventListener('click', () => {
@@ -64,7 +65,6 @@ fillBtn.addEventListener('click', () => {
         alert("🎉 Congratulations! Your ChillMate is full. Stay hydrated!");
     }
 });
-
 // Customize Bottle Feature
 const bottleImg = document.getElementById('bottle-img');
 const colorOptions = document.querySelectorAll('.color-circle');
@@ -122,10 +122,9 @@ function updateBottle() {
     let text = customTextInput.value.trim();
     customOverlay.innerText = text;
 }
-
 // Countdown Timer for Pre-orders
-function countdown() {
-    const endDate = new Date("October 15, 2025 23:59:59").getTime();
+const countdown = () => {
+    const endDate = new Date("October 15, 2025 23:59:59").getTime(); // Set your end date
     const now = new Date().getTime();
     const distance = endDate - now;
 
@@ -142,7 +141,7 @@ function countdown() {
     if(distance < 0){
         document.getElementById("countdown").innerHTML = "<h3>Pre-orders have ended!</h3>";
     }
-}
+};
 
-// Update countdown every second
+// Update every second
 setInterval(countdown, 1000);
