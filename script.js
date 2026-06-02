@@ -1,378 +1,385 @@
-// ==========================
-// Smooth Scrolling Navbar
-// ==========================
+// ===============================
+// CHILLMATE PREMIUM JAVASCRIPT
+// ===============================
 
-const links = document.querySelectorAll('nav ul li a');
+// Smooth Navigation Scroll
 
-links.forEach(link => {
+document.querySelectorAll('nav a').forEach(link => {
 
-    link.addEventListener('click', function (e) {
+link.addEventListener('click', function(e){
 
-        e.preventDefault();
+e.preventDefault();
 
-        const target =
-            document.querySelector(this.getAttribute('href'));
+const target =
+document.querySelector(
+this.getAttribute('href')
+);
 
-        if (target) {
+if(target){
 
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+target.scrollIntoView({
+behavior:'smooth'
+});
 
-        }
-
-    });
+}
 
 });
 
-// ==========================
-// FAQ Toggle
-// ==========================
+});
+
+// ===============================
+// FAQ ACCORDION
+// ===============================
 
 const faqCards =
-    document.querySelectorAll('.faq-card');
+document.querySelectorAll('.faq-card');
 
 faqCards.forEach(card => {
 
-    card.addEventListener('click', () => {
+card.addEventListener('click', () => {
 
-        card.classList.toggle('active');
+faqCards.forEach(item => {
 
-        const answer = card.querySelector('p');
+if(item !== card){
 
-        if (answer) {
+item.classList.remove('active');
 
-            if (card.classList.contains('active')) {
-
-                answer.style.display = 'block';
-
-            } else {
-
-                answer.style.display = 'none';
-
-            }
-
-        }
-
-    });
+}
 
 });
 
-// ==========================
-// Button Hover Animation
-// ==========================
-
-const preorderBtn =
-    document.querySelectorAll('.cta-btn');
-
-preorderBtn.forEach(btn => {
-
-    btn.addEventListener('mouseenter', () => {
-
-        btn.style.transform = 'scale(1.1)';
-        btn.style.boxShadow = '0 0 40px #00f';
-
-    });
-
-    btn.addEventListener('mouseleave', () => {
-
-        btn.style.transform = 'scale(1)';
-        btn.style.boxShadow = '0 0 20px #00f';
-
-    });
+card.classList.toggle('active');
 
 });
 
-// ==========================
-// Fade In Sections
-// ==========================
+});
+
+// ===============================
+// SCROLL REVEAL ANIMATION
+// ===============================
 
 const sections =
-    document.querySelectorAll('section');
+document.querySelectorAll('section');
 
 const observer =
-    new IntersectionObserver(entries => {
+new IntersectionObserver(
 
-        entries.forEach(entry => {
+entries => {
 
-            if (entry.isIntersecting) {
+entries.forEach(entry => {
 
-                entry.target.classList.add('visible');
+if(entry.isIntersecting){
 
-            }
+entry.target.classList.add('visible');
 
-        });
+}
 
-    }, {
-        threshold: 0.2
-    });
+});
+
+},
+
+{
+threshold:0.15
+}
+
+);
 
 sections.forEach(section => {
 
-    observer.observe(section);
+observer.observe(section);
 
 });
 
-// ==========================
-// Hydration Game
-// ==========================
+// ===============================
+// HEADER SHADOW ON SCROLL
+// ===============================
 
-const fillBtn =
-    document.getElementById('fill-btn');
+const header =
+document.querySelector('.header');
 
-const water =
-    document.querySelector('.water');
+window.addEventListener('scroll', () => {
 
-const levelText =
-    document.getElementById('level-text');
+if(window.scrollY > 50){
 
-let level = 0;
-
-if (fillBtn && water && levelText) {
-
-    fillBtn.addEventListener('click', () => {
-
-        if (level < 100) {
-
-            level += 10;
-
-            water.style.height =
-                level + '%';
-
-            levelText.textContent =
-                `Water Level: ${level}%`;
-
-        }
-
-        if (level >= 100) {
-
-            levelText.textContent =
-                "Bottle Full! Stay Hydrated 💧";
-
-        }
-
-    });
+header.style.boxShadow =
+'0 10px 40px rgba(0,191,255,.15)';
 
 }
 
-// ==========================
-// Customize Bottle Feature
-// ==========================
+else{
 
-const bottleImg =
-    document.getElementById('bottle-img');
-
-const colorOptions =
-    document.querySelectorAll('.color-circle');
-
-const patternButtons =
-    document.querySelectorAll('.pattern-options button');
-
-const customTextInput =
-    document.getElementById('custom-text');
-
-const applyBtn =
-    document.getElementById('apply-custom');
-
-let customOverlay =
-    document.getElementById('custom-overlay');
-
-const preview =
-    document.querySelector('.bottle-preview');
-
-// Create overlay automatically
-if (!customOverlay && preview) {
-
-    customOverlay =
-        document.createElement('div');
-
-    customOverlay.id = 'custom-overlay';
-
-    preview.appendChild(customOverlay);
+header.style.boxShadow = 'none';
 
 }
-
-let selectedColor = 'black';
-let selectedPattern = 'none';
-
-// Color Change
-colorOptions.forEach(circle => {
-
-    circle.addEventListener('click', () => {
-
-        selectedColor =
-            circle.getAttribute('data-color')
-            .toLowerCase();
-
-        updateBottle();
-
-    });
 
 });
 
-// Pattern Change
-patternButtons.forEach(button => {
+// ===============================
+// BUTTON GLOW EFFECT
+// ===============================
 
-    button.addEventListener('click', () => {
+document.querySelectorAll('.cta-btn')
+.forEach(btn => {
 
-        selectedPattern =
-            button.getAttribute('data-pattern');
+btn.addEventListener('mouseenter', () => {
 
-        updateBottle();
-
-    });
+btn.style.transform =
+'translateY(-4px) scale(1.03)';
 
 });
 
-// Apply Customization
-if (applyBtn) {
+btn.addEventListener('mouseleave', () => {
 
-    applyBtn.addEventListener('click', () => {
+btn.style.transform =
+'translateY(0) scale(1)';
 
-        updateBottle();
+});
 
-        alert(
-            'Your customized ChillMate is ready!'
-        );
+});
 
-    });
+// ===============================
+// GALLERY IMAGE POPUP
+// ===============================
 
-}
+const galleryImages =
+document.querySelectorAll('.gallery-grid img');
 
-// Bottle Update Function
-function updateBottle() {
+galleryImages.forEach(img => {
 
-    if (!bottleImg) return;
+img.addEventListener('click', () => {
 
-    // Change Bottle Image
-    switch (selectedColor) {
+const overlay =
+document.createElement('div');
 
-        case 'black':
-            bottleImg.src =
-                'images/chillmate.png';
-            break;
+overlay.classList.add('image-popup');
 
-        case 'red':
-            bottleImg.src =
-                'images/chillmate-red.png';
-            break;
+overlay.innerHTML =
 
-        case 'white':
-            bottleImg.src =
-                'images/chillmate-white.png';
-            break;
+`
 
-        case 'blue':
-            bottleImg.src =
-                'images/chillmate-blue.png';
-            break;
+<div class="popup-container">
+<img src="${img.src}">
+</div>
+`;
 
-        default:
-            bottleImg.src =
-                'images/chillmate.png';
+document.body.appendChild(overlay);
 
-    }
+overlay.addEventListener('click', () => {
 
-    // Pattern Overlay
-    if (preview) {
+overlay.remove();
 
-        preview.style.background =
-            selectedPattern !== 'none'
-                ? `url('images/pattern-${selectedPattern}.png') center/cover no-repeat`
-                : 'none';
+});
 
-    }
+});
 
-    // Custom Name
-    if (customOverlay && customTextInput) {
+});
 
-        customOverlay.innerText =
-            customTextInput.value.trim();
+// ===============================
+// TEAM CARD ANIMATION
+// ===============================
 
-    }
+const teamCards =
+document.querySelectorAll('.team-card');
 
-}
+teamCards.forEach(card => {
 
-// ==========================
-// Countdown Timer
-// ==========================
+card.addEventListener('mouseenter', () => {
 
-function countdown() {
+card.style.transform =
+'translateY(-12px)';
 
-    const endDate =
-        new Date("October 15, 2025 23:59:59")
-        .getTime();
+});
 
-    const now =
-        new Date().getTime();
+card.addEventListener('mouseleave', () => {
 
-    const distance =
-        endDate - now;
+card.style.transform =
+'translateY(0px)';
 
-    if (distance < 0) {
+});
 
-        const timer =
-            document.querySelector('.timer');
+});
 
-        if (timer) {
+// ===============================
+// PARALLAX HERO EFFECT
+// ===============================
 
-            timer.innerHTML =
-                "Pre-orders have ended!";
+window.addEventListener('scroll', () => {
 
-        }
+const hero =
+document.querySelector('.hero');
 
-        return;
-    }
+const scrolled =
+window.pageYOffset;
 
-    const days =
-        Math.floor(distance /
-            (1000 * 60 * 60 * 24));
+if(hero){
 
-    const hours =
-        Math.floor((distance %
-            (1000 * 60 * 60 * 24)) /
-            (1000 * 60 * 60));
-
-    const minutes =
-        Math.floor((distance %
-            (1000 * 60 * 60)) /
-            (1000 * 60));
-
-    const seconds =
-        Math.floor((distance %
-            (1000 * 60)) / 1000);
-
-    const daysEl =
-        document.getElementById("days");
-
-    const hoursEl =
-        document.getElementById("hours");
-
-    const minutesEl =
-        document.getElementById("minutes");
-
-    const secondsEl =
-        document.getElementById("seconds");
-
-    if (daysEl)
-        daysEl.textContent =
-            String(days).padStart(2, '0');
-
-    if (hoursEl)
-        hoursEl.textContent =
-            String(hours).padStart(2, '0');
-
-    if (minutesEl)
-        minutesEl.textContent =
-            String(minutes).padStart(2, '0');
-
-    if (secondsEl)
-        secondsEl.textContent =
-            String(seconds).padStart(2, '0');
+hero.style.backgroundPositionY =
+scrolled * 0.4 + 'px';
 
 }
 
-// Start Timer
-setInterval(countdown, 1000);
+});
 
-countdown();
+// ===============================
+// DYNAMIC YEAR
+// ===============================
+
+const footerYear =
+document.getElementById('year');
+
+if(footerYear){
+
+footerYear.textContent =
+new Date().getFullYear();
+
+}
+
+// ===============================
+// CHILLMATE EARLY ACCESS COUNTER
+// ===============================
+
+let supporters = 128;
+
+const counter =
+document.getElementById('supporters-count');
+
+if(counter){
+
+setInterval(() => {
+
+supporters +=
+Math.floor(Math.random() * 3);
+
+counter.textContent =
+supporters;
+
+},5000);
+
+}
+
+// ===============================
+// PREORDER BUTTON TRACKING
+// ===============================
+
+document
+.querySelectorAll('.cta-btn')
+.forEach(button => {
+
+button.addEventListener('click', () => {
+
+console.log(
+'ChillMate Early Access Clicked'
+);
+
+});
+
+});
+
+// ===============================
+// WELCOME MESSAGE
+// ===============================
+
+window.addEventListener('load', () => {
+
+console.log(
+'Welcome to ChillMate™'
+);
+
+console.log(
+'Reimagining Hydration Through Innovation.'
+);
+
+});
+
+// ===============================
+// IMAGE POPUP CSS INJECTION
+// ===============================
+
+const popupStyle =
+document.createElement('style');
+
+popupStyle.innerHTML =
+
+`
+.image-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+cursor:pointer;
+}
+
+.popup-container img{
+max-width:90%;
+max-height:90vh;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,191,255,.5);
+}
+`;
+
+document.head.appendChild(
+popupStyle
+);
+
+// ===============================
+// END OF SCRIPT
+// ===============================
+
+/*
+CHILLMATE TEAM
+
+Founder:
+Leelanshu Upadhyay
+
+Operations Manager:
+Aditya Patil
+
+Social Media Manager:
+Agrani Priya Srivastava
+
+Business Strategist:
+Rudrakash Daryani
+
+Marketing Manager:
+Roshan Upadhyay
+
+Video Editor & Product Designer:
+Ranveer Sharma
+*/
+// ChillMate Countdown Timer
+
+const launchDate =
+new Date("December 31, 2026 23:59:59").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+
+const distance = launchDate - now;
+
+const days =
+Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours =
+Math.floor((distance % (1000 * 60 * 60 * 24))
+/ (1000 * 60 * 60));
+
+const minutes =
+Math.floor((distance % (1000 * 60 * 60))
+/ (1000 * 60));
+
+const seconds =
+Math.floor((distance % (1000 * 60))
+/ 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+},1000);
