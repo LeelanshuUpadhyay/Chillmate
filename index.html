@@ -1,444 +1,959 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- =========================================================
+     CHILLMATE — PREMIUM WEBSITE
+     HTML
+========================================================= -->
 
-<title>ChillMate | Smart Hydration Reimagined</title>
-
-<meta name="description" content="ChillMate is an innovative smart bottle combining hydration, cooling, entertainment and convenience into one revolutionary product.">
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<header class="header">
-
-<div class="logo">
-<img src="images/chillmate-logo.png" alt="ChillMate Logo">
+<div id="loader">
+  <div class="loader-brand">CHILL<span>MATE</span></div>
+  <div class="loader-line"></div>
 </div>
 
-<nav>
-<ul class="nav-links">
+<div class="cursor-glow"></div>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#features">Features</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#founder">Founder</a></li>
-<li><a href="#vision">Vision</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
+<header class="navbar">
+  <a href="#home" class="logo">
+    CHILL<span>MATE</span>
+  </a>
 
-</ul>
-</nav>
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#product">Product</a>
+    <a href="#features">Features</a>
+    <a href="#mission">Mission</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <a href="#preorder" class="nav-button">Pre-Order</a>
+
+  <button class="menu-button" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 
-<section id="home" class="hero">
-
-<div class="hero-content">
-
-<h1>The Future Of Smart Hydration Has Arrived</h1>
-
-<p>
-More than a bottle. ChillMate combines hydration,
-personal cooling, entertainment and convenience into
-one innovative lifestyle companion.
-</p>
-
-<a href="https://form.jotform.com/261512321182041"
-target="_blank"
-class="cta-btn">
-
-Reserve Your ChillMate
-
-</a>
-
+<div class="mobile-menu">
+  <a href="#home">Home</a>
+  <a href="#product">Product</a>
+  <a href="#features">Features</a>
+  <a href="#mission">Mission</a>
+  <a href="#team">Team</a>
+  <a href="#contact">Contact</a>
+  <a href="#preorder" class="mobile-order">Pre-Order Now</a>
 </div>
 
-</section>
 
-<section class="trust-badges">
+<main>
 
-<div class="badge">Student Innovation</div>
-<div class="badge">Smart Technology</div>
-<div class="badge">Future Ready Design</div>
-<div class="badge">Made In India Vision</div>
+  <!-- ================= HERO ================= -->
 
-</section>
+  <section class="hero" id="home">
 
-<section id="features" class="features">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
 
-<h2>Why ChillMate Is Different</h2>
+    <div class="hero-copy reveal">
 
-<div class="feature-cards">
+      <div class="hero-kicker">
+        <span></span>
+        THE NEXT GENERATION OF HYDRATION
+      </div>
 
-<div class="feature-card">
-<img src="images/fan.png" alt="">
-<h3>Cooling Fan</h3>
-<p>
-Integrated personal cooling system designed
-for comfort on the go.
-</p>
-</div>
+      <h1>
+        HYDRATION.
+        <strong>REIMAGINED.</strong>
+      </h1>
 
-<div class="feature-card">
-<img src="images/speaker.png" alt="">
-<h3>Bluetooth Speaker</h3>
-<p>
-Enjoy music, podcasts and entertainment
-wherever you are.
-</p>
-</div>
+      <p>
+        A multifunctional smart hydration experience engineered to
+        bring cooling, comfort, entertainment and intelligent technology
+        into one extraordinary companion.
+      </p>
 
-<div class="feature-card">
-<img src="images/medicine.png" alt="">
-<h3>Medicine Storage</h3>
-<p>
-Secure compartment for daily essentials
-and emergency medication.
-</p>
-</div>
+      <div class="hero-actions">
+        <a href="#preorder" class="primary-button">
+          PRE-ORDER NOW <span>↗</span>
+        </a>
 
-<div class="feature-card">
-<img src="images/app.png" alt="">
-<h3>Smart App</h3>
-<p>
-Track hydration goals and connect
-with your ChillMate experience.
-</p>
-</div>
+        <a href="#product" class="secondary-button">
+          DISCOVER CHILLMATE
+        </a>
+      </div>
 
-</div>
+      <div class="hero-specs">
+        <span>SMART</span>
+        <i></i>
+        <span>MULTIFUNCTIONAL</span>
+        <i></i>
+        <span>PREMIUM</span>
+      </div>
 
-</section>
+    </div>
 
-<section class="comparison">
+    <div class="hero-product reveal">
 
-<h2>Ordinary Bottle vs ChillMate</h2>
+      <!-- REPLACE WITH YOUR ORIGINAL CHILLMATE BOTTLE IMAGE -->
+      <img
+        src="YOUR_CHILLMATE_BOTTLE_IMAGE_URL"
+        alt="ChillMate Smart Water Bottle"
+        class="hero-bottle"
+      >
 
-<div class="comparison-grid">
+      <div class="bottle-shadow"></div>
 
-<div class="comparison-card">
+      <div class="floating-card card-top">
+        <small>ENGINEERED</small>
+        <strong>FOR MORE</strong>
+      </div>
 
-<h3>Ordinary Bottle</h3>
+      <div class="floating-card card-bottom">
+        <small>CAPACITY</small>
+        <strong>900 ML / 1800 ML</strong>
+      </div>
 
-<ul>
-<li>Stores water only</li>
-<li>No cooling feature</li>
-<li>No entertainment</li>
-<li>No smart integration</li>
+    </div>
 
-</ul>
+    <div class="hero-scroll">
+      <span>SCROLL TO EXPLORE</span>
+      <div></div>
+    </div>
 
-</div>
+  </section>
 
-<div class="comparison-card premium">
 
-<h3>ChillMate</h3>
+  <!-- ================= BRAND STATEMENT ================= -->
 
-<ul>
-<li>Smart hydration</li>
-<li>Integrated cooling fan</li>
-<li>Bluetooth speaker</li>
-<li>Medicine compartment</li>
-<li>Smart app ecosystem</li>
+  <section class="statement">
 
-</ul>
+    <div class="section-index">01 — 06</div>
 
-</div>
+    <div class="statement-inner reveal">
 
-</div>
+      <p class="eyebrow">THE CHILLMATE PHILOSOPHY</p>
 
-</section>
+      <h2>
+        ORDINARY BOTTLES
+        <span>CARRY WATER.</span>
+      </h2>
 
-<section id="gallery" class="gallery">
+      <h3>
+        CHILLMATE CARRIES
+        <em>AN EXPERIENCE.</em>
+      </h3>
 
-<h2>Innovation Gallery</h2>
+      <p class="statement-text">
+        ChillMate challenges the conventional definition of a water
+        bottle by converging hydration, technology, personal comfort
+        and everyday utility into one thoughtfully engineered experience.
+      </p>
 
-<p>
-A glimpse into the vision, creativity and development journey behind ChillMate.
-</p>
-
-<div class="gallery-grid">
-
-<img src="images/gallery1.jpg" alt="">
-<img src="images/gallery2.jpg" alt="">
-<img src="images/gallery3.jpg" alt="">
-<img src="images/gallery4.jpg" alt="">
-<img src="images/gallery5.jpg" alt="">
-<img src="images/gallery6.jpg" alt="">
-
-</div>
-
-</section>
-
-<section class="lifestyle">
-
-<h2>Designed For Every Lifestyle</h2>
-
-<div class="lifestyle-cards">
-
-<div class="lifestyle-card">
-<img src="images/study.png" alt="">
-<h3>Students</h3>
-<p>Stay focused, refreshed and productive throughout the day.</p>
-</div>
-
-<div class="lifestyle-card">
-<img src="images/office.png" alt="">
-<h3>Professionals</h3>
-<p>Smart hydration designed for modern work environments.</p>
-</div>
+    </div>
 
-<div class="lifestyle-card">
-<img src="images/gym.png" alt="">
-<h3>Fitness</h3>
-<p>Stay energized and motivated during workouts.</p>
-</div>
+  </section>
 
-</div>
 
-</section>
+  <!-- ================= PROBLEM ================= -->
 
-<section id="team" class="team">
+  <section class="problem" id="mission">
 
-<h2>Meet The Team Behind ChillMate</h2>
+    <div class="section-heading reveal">
+      <p class="eyebrow">THE PROBLEM</p>
 
-<p class="team-intro">
-Innovation becomes reality through teamwork, creativity and dedication.
-</p>
+      <h2>
+        A MASSIVE MARKET.
+        <span>A STAGNANT CATEGORY.</span>
+      </h2>
+    </div>
 
-<div class="team-grid">
+    <div class="problem-layout">
 
-<div class="team-card">
-<img src="images/leelanshu.jpg" alt="">
-<h3>Leelanshu Upadhyay</h3>
-<h4>Founder & Innovator</h4>
-<p>
-The visionary behind ChillMate whose passion for innovation transformed an idea into a unique product concept.
-</p>
-</div>
+      <div class="problem-number reveal">
+        <span>01</span>
+        <strong>1.4B+</strong>
+        <small>CONSUMERS</small>
+      </div>
 
-<div class="team-card">
-<img src="images/aditya.jpg" alt="">
-<h3>Aditya Patil</h3>
-<h4>Operations Manager</h4>
-<p>
-Coordinates planning and execution while ensuring smooth collaboration across the team.
-</p>
-</div>
+      <div class="problem-copy reveal">
 
-<div class="team-card">
-<img src="images/agrani.jpg" alt="">
-<h3>Agrani Priya Srivastava</h3>
-<h4>Social Media Manager</h4>
-<p>
-Drives the online presence of ChillMate through engaging content and audience interaction.
-</p>
-</div>
+        <p>
+          India's 1.4 billion consumers face a hydration product gap
+          that no single brand has adequately addressed.
+        </p>
 
-<div class="team-card">
-<img src="images/rudrakash.jpg" alt="">
-<h3>Rudrakash Daryani</h3>
-<h4>Business Strategist</h4>
-<p>
-Contributes strategic thinking and supports the long-term growth vision of the brand.
-</p>
-</div>
+        <p>
+          Students on hot campuses carry basic bottles with no cooling.
+          Office professionals lack a companion that integrates with
+          their lifestyle. Travelers and gym-goers juggle multiple
+          separate devices — a bottle, a fan, a speaker and a medicine
+          box — when one intelligent product could replace them all.
+        </p>
+
+        <p>
+          Existing products offer two extremes: inexpensive,
+          featureless bottles that do little beyond holding water,
+          or imported premium products that are either prohibitively
+          expensive or lack the combination of features Indian users need.
+        </p>
+
+        <p class="problem-highlight">
+          <strong>
+            ChillMate is built to fill that gap.
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCT ================= -->
+
+  <section class="product-section" id="product">
+
+    <div class="section-heading centered reveal">
 
-<div class="team-card">
-<img src="images/roshan.jpg" alt="">
-<h3>Roshan Upadhyay</h3>
-<h4>Marketing Manager</h4>
-<p>
-Leads brand awareness initiatives and marketing campaigns for future expansion.
-</p>
-</div>
+      <p class="eyebrow">THE PRODUCT</p>
 
-<div class="team-card">
-<img src="images/ranveer.jpg" alt="">
-<h3>Ranveer Sharma</h3>
-<h4>Video Editor & Product Designer</h4>
-<p>
-Brings ideas to life through visual storytelling, creative design and promotional media.
-</p>
-</div>
+      <h2>
+        MEET
+        <span>CHILLMATE.</span>
+      </h2>
 
-</div>
+      <p>
+        More than a bottle. An experience engineered for modern life.
+      </p>
 
-</section>
+    </div>
 
-<section id="founder" class="founder">
+    <div class="product-showcase">
 
-<h2>Message From The Founder</h2>
+      <div class="product-visual reveal">
 
-<div class="founder-card">
+        <!-- REPLACE WITH YOUR ORIGINAL BOTTLE IMAGE -->
+        <img
+          src="YOUR_CHILLMATE_BOTTLE_IMAGE_URL"
+          alt="ChillMate Smart Bottle"
+        >
 
-<img src="images/founder.jpg" alt="Founder">
+        <div class="visual-ring"></div>
 
-<div class="founder-text">
+      </div>
 
-<h3>Leelanshu Upadhyay</h3>
+      <div class="product-features">
 
-<p>
-ChillMate was created with one goal — to rethink how people experience hydration.
-By combining technology, convenience and everyday practicality, the vision is to create products that make life smarter, more enjoyable and more connected.
-</p>
+        <article class="feature-line reveal">
+          <span>01</span>
+          <div>
+            <h3>DOUBLE-WALL VACUUM INSULATION</h3>
+            <p>
+              Engineered insulation designed for a premium hydration experience.
+            </p>
+          </div>
+        </article>
 
-</div>
+        <article class="feature-line reveal">
+          <span>02</span>
+          <div>
+            <h3>ACTIVE WATER COOLING TECHNOLOGY</h3>
+            <p>
+              Advanced cooling technology designed to elevate everyday hydration.
+            </p>
+          </div>
+        </article>
 
-</div>
+        <article class="feature-line reveal">
+          <span>03</span>
+          <div>
+            <h3>HIDDEN FLIP-OUT PERSONAL FAN</h3>
+            <p>
+              A discreet personal cooling experience integrated into the bottle.
+            </p>
+          </div>
+        </article>
 
-</section>
+        <article class="feature-line reveal">
+          <span>04</span>
+          <div>
+            <h3>RECHARGEABLE + USB-C</h3>
+            <p>
+              Rechargeable battery system with USB-C fast charging.
+            </p>
+          </div>
+        </article>
 
-<section id="vision" class="vision">
+        <article class="feature-line reveal">
+          <span>05</span>
+          <div>
+            <h3>ILLUMINATED CHILLMATE LOGO</h3>
+            <p>
+              A signature LED identity that gives the bottle its distinctive character.
+            </p>
+          </div>
+        </article>
 
-<h2>Our Vision</h2>
+        <article class="feature-line reveal">
+          <span>06</span>
+          <div>
+            <h3>LEAK-PROOF PREMIUM DESIGN</h3>
+            <p>
+              A refined leak-proof design finished for everyday premium use.
+            </p>
+          </div>
+        </article>
 
-<p>
-We believe ordinary products can become extraordinary experiences.
-Our mission is to redefine hydration through innovation and create products that inspire creativity, convenience and comfort.
-</p>
+      </div>
 
-</section>
+    </div>
 
-<section id="faq" class="faq">
+  </section>
 
-<h2>Frequently Asked Questions</h2>
 
-<div class="faq-card">
-<h3>When will ChillMate launch?</h3>
-<p>Launch updates will be shared with early supporters and community members.</p>
-</div>
+  <!-- ================= MODELS ================= -->
 
-<div class="faq-card">
-<h3>Will ChillMate have app connectivity?</h3>
-<p>Yes, future versions are planned with smart connectivity features.</p>
-</div>
+  <section class="models">
 
-<div class="faq-card">
-<h3>Who is ChillMate designed for?</h3>
-<p>Students, professionals, travelers and anyone seeking smarter hydration.</p>
-</div>
+    <div class="section-heading reveal">
 
-</section>
+      <p class="eyebrow">THE COLLECTION</p>
 
-<section id="preorder" class="preorder">
+      <h2>
+        THREE WAYS
+        <span>TO CHILL.</span>
+      </h2>
 
-<h2>Reserve Your ChillMate</h2>
+    </div>
 
-<p>
-Join our early supporters and receive exclusive updates,
-future announcements and priority access opportunities.
-</p>
+    <div class="model-grid">
 
-<a href="https://form.jotform.com/261512321182041"
-target="_blank"
-class="cta-btn">
+      <!-- BASE -->
 
-Reserve Your ChillMate
+      <article class="model-card reveal">
 
-</a>
+        <div class="model-number">01</div>
 
-</section>
+        <div class="model-content">
 
-<section id="contact" class="contact">
+          <p class="model-label">ESSENTIAL</p>
 
-<h2>Contact Us</h2>
+          <h3>CHILLMATE <span>BASE</span></h3>
 
-<form>
+          <div class="price">₹3,999</div>
 
-<input type="text" placeholder="Your Name" required>
+          <p class="model-description">
+            The essential smart hydration experience.
+          </p>
 
-<input type="email" placeholder="Email Address" required>
+          <ul>
+            <li>900 ml & 1800 ml</li>
+            <li>Double-wall vacuum insulation</li>
+            <li>Active water cooling technology</li>
+            <li>Hidden flip-out personal fan</li>
+            <li>Rechargeable battery + USB-C</li>
+            <li>LED illuminated logo</li>
+            <li>Leak-proof premium finish</li>
+          </ul>
 
-<textarea placeholder="Your Message"></textarea>
+          <a href="#preorder" class="model-button">
+            PRE-ORDER BASE →
+          </a>
 
-<button type="submit">
+        </div>
 
-Send Message
+      </article>
 
-</button>
 
-</form>
+      <!-- PLUS -->
 
-</section>
+      <article class="model-card featured reveal">
 
-<footer>
+        <div class="model-badge">MOST ADVANCED</div>
+        <div class="model-number">02</div>
 
-<div class="footer-content">
+        <div class="model-content">
 
-<p>© 2026 ChillMate. All Rights Reserved.</p>
+          <p class="model-label">ELEVATED</p>
 
-<p>
-ChillMate™ — Reimagining Hydration Through Innovation.
-</p>
+          <h3>CHILLMATE <span>PLUS</span></h3>
 
-<div class="social-icons">
+          <div class="price">₹4,999</div>
 
-<a href="https://www.instagram.com/chillmate_brand?utm_source=qr" target="_blank">
+          <p class="model-description">
+            Everything in Base, elevated.
+          </p>
 
-<img src="images/instagram.png" alt="Instagram">
+          <ul>
+            <li>900 ml & 1800 ml</li>
+            <li>All Base features</li>
+            <li>Integrated Bluetooth speaker</li>
+            <li>Side medicine storage compartment</li>
+            <li>ChillMate ClapGlow™</li>
+            <li>Clap-activated LED lighting</li>
+            <li>Larger battery capacity</li>
+            <li>Premium finish</li>
+          </ul>
 
-</a>
+          <a href="#preorder" class="model-button">
+            PRE-ORDER PLUS →
+          </a>
 
-</div>
+        </div>
 
-</div>
+      </article>
+
+
+      <!-- PRO -->
+
+      <article class="model-card reveal">
+
+        <div class="model-number">03</div>
+
+        <div class="model-content">
+
+          <p class="model-label">ULTIMATE</p>
+
+          <h3>CHILLMATE <span>PRO</span></h3>
+
+          <div class="price">₹7,999</div>
+
+          <p class="model-description">
+            The ultimate smart hydration experience.
+          </p>
+
+          <ul>
+            <li>900 ml & 1800 ml</li>
+            <li>All Plus features</li>
+            <li>RGB smart lighting</li>
+            <li>Premium stainless-steel construction</li>
+            <li>Advanced cooling system</li>
+            <li>High-capacity battery</li>
+            <li>Mobile app connectivity — planned future concept</li>
+          </ul>
+
+          <a href="#preorder" class="model-button">
+            PRE-ORDER PRO →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FEATURES ================= -->
+
+  <section class="features-section" id="features">
+
+    <div class="section-heading centered reveal">
+
+      <p class="eyebrow">THE DIFFERENCE</p>
+
+      <h2>
+        ENGINEERED
+        <span>WITH INTENT.</span>
+      </h2>
+
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="big-feature reveal">
+        <span>01</span>
+        <h3>HYDRATE.</h3>
+        <p>
+          Smart hydration designed around the realities of modern life.
+        </p>
+      </article>
+
+      <article class="big-feature reveal">
+        <span>02</span>
+        <h3>COOL.</h3>
+        <p>
+          Active cooling and personal comfort integrated into one companion.
+        </p>
+      </article>
+
+      <article class="big-feature reveal">
+        <span>03</span>
+        <h3>CONNECT.</h3>
+        <p>
+          Entertainment and technology brought naturally into the everyday journey.
+        </p>
+      </article>
+
+      <article class="big-feature reveal">
+        <span>04</span>
+        <h3>CONVENIENCE.</h3>
+        <p>
+          Multiple useful functions thoughtfully unified within one product.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= MISSION ================= -->
+
+  <section class="mission-section">
+
+    <div class="mission-content reveal">
+
+      <p class="eyebrow">OUR MISSION</p>
+
+      <h2>
+        EVERY SIP.
+        <span>SMARTER.</span>
+      </h2>
+
+      <p>
+        To engineer premium, multi-functional hydration products that
+        combine cooling technology, personal convenience, entertainment
+        and smart features — making every sip smarter, cooler and more
+        enjoyable for every user, everywhere.
+      </p>
+
+    </div>
+
+    <div class="mission-word">
+      INNOVATION
+    </div>
+
+  </section>
+
+
+  <!-- ================= FUTURE ================= -->
+
+  <section class="future-section">
+
+    <div class="section-heading reveal">
+
+      <p class="eyebrow">THE ROAD AHEAD</p>
+
+      <h2>
+        BUILT FOR
+        <span>WHAT'S NEXT.</span>
+      </h2>
+
+    </div>
+
+    <div class="future-grid">
+
+      <article class="future-card reveal">
+        <span>CONCEPT 01</span>
+        <h3>CHILLMATE GUARDIAN™</h3>
+        <p>
+          Accident alert concept designed for a future generation of
+          intelligent ChillMate experiences.
+        </p>
+        <small>PLANNED FUTURE CONCEPT</small>
+      </article>
+
+      <article class="future-card reveal">
+        <span>CONCEPT 02</span>
+        <h3>AI HEALTH GUARDIAN™</h3>
+        <p>
+          A future hydration assistant concept designed to explore
+          intelligent, personalized hydration support.
+        </p>
+        <small>PLANNED FUTURE CONCEPT</small>
+      </article>
+
+      <article class="future-card reveal">
+        <span>CONCEPT 03</span>
+        <h3>MOBILE CONNECTIVITY</h3>
+        <p>
+          Mobile app connectivity envisioned as part of the future
+          ChillMate ecosystem.
+        </p>
+        <small>PLANNED FUTURE CONCEPT</small>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOUNDER ================= -->
+
+  <section class="founder-section">
+
+    <div class="founder-image reveal">
+
+      <!-- REPLACE WITH YOUR ORIGINAL FOUNDER IMAGE -->
+      <img
+        src="YOUR_FOUNDER_IMAGE_URL"
+        alt="Leelanshu Upadhyay — Founder of ChillMate"
+      >
+
+    </div>
+
+    <div class="founder-content reveal">
+
+      <p class="eyebrow">THE VISION BEHIND CHILLMATE</p>
+
+      <h2>
+        LEELANSHU
+        <span>UPADHYAY</span>
+      </h2>
+
+      <p class="founder-role">FOUNDER & VISIONARY</p>
+
+      <p>
+        Every meaningful venture begins with a question:
+        <strong>what if something ordinary could become extraordinary?</strong>
+      </p>
+
+      <p>
+        ChillMate was conceived from the belief that everyday products
+        should not remain confined to yesterday's possibilities.
+        By bringing hydration, cooling, convenience, entertainment and
+        intelligent technology together, ChillMate seeks to redefine
+        what a water bottle can become.
+      </p>
+
+      <div class="founder-signature">
+        CHILLMATE
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= TEAM ================= -->
+
+  <section class="team-section" id="team">
+
+    <div class="section-heading centered reveal">
+
+      <p class="eyebrow">THE PEOPLE</p>
+
+      <h2>
+        THE MINDS
+        <span>BEHIND THE MISSION.</span>
+      </h2>
+
+    </div>
+
+    <div class="team-grid">
+
+      <article class="team-member reveal">
+        <div class="avatar">SS</div>
+        <h3>Shambhavi Shrivastava</h3>
+        <p>Business Head</p>
+      </article>
+
+      <article class="team-member reveal">
+        <div class="avatar">NJ</div>
+        <h3>Nistha Joshi</h3>
+        <p>Head Manager</p>
+      </article>
+
+      <article class="team-member reveal">
+        <div class="avatar">APS</div>
+        <h3>Agrani Priya Shrivastava</h3>
+        <p>Social Media Manager</p>
+      </article>
+
+      <article class="team-member reveal">
+        <div class="avatar">AP</div>
+        <h3>Aditya Patil</h3>
+        <p>Marketing Manager</p>
+      </article>
+
+      <article class="team-member reveal">
+        <div class="avatar">RD</div>
+        <h3>Rudrakash Daryani</h3>
+        <p>Business Strategist</p>
+      </article>
+
+      <article class="team-member reveal">
+        <div class="avatar">RS</div>
+        <h3>Ranveer Sharma</h3>
+        <p>Editor & Creator</p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PREORDER ================= -->
+
+  <section class="preorder-section" id="preorder">
+
+    <div class="preorder-glow"></div>
+
+    <div class="preorder-content reveal">
+
+      <p class="eyebrow">YOUR NEXT EXPERIENCE</p>
+
+      <h2>
+        READY
+        <span>TO CHILL?</span>
+      </h2>
+
+      <p>
+        Be among the first to experience hydration,
+        reimagined for a new generation.
+      </p>
+
+      <!-- CHANGE THE HREF TO YOUR REAL PRE-ORDER LINK -->
+      <a
+        href="YOUR_PREORDER_LINK_HERE"
+        class="primary-button large"
+        target="_blank"
+        rel="noopener"
+      >
+        PRE-ORDER CHILLMATE <span>↗</span>
+      </a>
+
+      <div class="payment-note">
+        Secure your place in the ChillMate journey.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= REVIEWS ================= -->
+
+  <section class="reviews-section" id="reviews">
+
+    <div class="section-heading centered reveal">
+
+      <p class="eyebrow">COMMUNITY VOICE</p>
+
+      <h2>
+        THE EXPERIENCE
+        <span>SPEAKS.</span>
+      </h2>
+
+    </div>
+
+    <div class="review-placeholder reveal">
+
+      <div class="quote-mark">“</div>
+
+      <h3>
+        YOUR EXPERIENCE
+        <span>COULD BE HERE.</span>
+      </h3>
+
+      <p>
+        Genuine customer experiences will be featured here as
+        the ChillMate community grows.
+      </p>
+
+      <a href="#preorder">BECOME AN EARLY USER →</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact-section" id="contact">
+
+    <div class="contact-intro reveal">
+
+      <p class="eyebrow">CONTACT CHILLMATE</p>
+
+      <h2>
+        LET'S BUILD
+        <span>THE FUTURE.</span>
+      </h2>
+
+      <p>
+        Whether you're a customer, collaborator, investor or simply
+        curious about what we're building, we'd love to hear from you.
+      </p>
+
+      <div class="contact-details">
+
+        <a href="mailto:chillmatelegacy@gmail.com">
+          chillmatelegacy@gmail.com
+        </a>
+
+        <a
+          href="https://www.instagram.com/chillmate_official"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram — @chillmate_official
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/chillmate"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn — ChillMate
+        </a>
+
+        <p>
+          Andheri West, Mumbai — 400069<br>
+          Maharashtra, India
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <form class="contact-form" id="contactForm">
+
+      <div class="form-row">
+
+        <div class="form-field">
+          <label for="name">YOUR NAME</label>
+          <input id="name" type="text" required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">EMAIL ADDRESS</label>
+          <input id="email" type="email" required>
+        </div>
+
+      </div>
+
+      <div class="form-field">
+        <label for="phone">PHONE</label>
+        <input id="phone" type="tel">
+      </div>
+
+      <div class="form-field">
+        <label for="message">MESSAGE</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">
+        SEND MESSAGE <span>↗</span>
+      </button>
+
+      <p class="form-status" id="formStatus"></p>
+
+    </form>
+
+  </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <a href="#home" class="footer-logo">
+      CHILL<span>MATE</span>
+    </a>
+
+    <p>
+      HYDRATION. REIMAGINED.
+    </p>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <span>© 2026 CHILLMATE. ALL RIGHTS RESERVED.</span>
+
+    <div>
+      <a href="#home">HOME</a>
+      <a href="#product">PRODUCT</a>
+      <a href="#team">TEAM</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+
+  </div>
 
 </footer>
 
-<script src="script.js"></script>
+<a href="#home" class="back-top" aria-label="Back to top">↑</a><!-- =====================================================
+     CHILLMATE PROMISE — FINAL SIGNATURE
+===================================================== -->
 
-</body>
-</html>
-<section class="company-info">
+<section class="chillmate-promise" id="promise">
 
-<h2>Headquarters & Support</h2>
+  <div class="promise-glow"></div>
 
-<div class="info-grid">
+  <div class="promise-content">
 
-<div class="info-card">
-<h3>Headquarters</h3>
+    <div class="promise-eyebrow">
+      THE CHILLMATE PROMISE
+    </div>
 
-<p>
-ChillMate Innovation Headquarters<br>
-Andheri East, Mumbai<br>
-Maharashtra, India<br>
-PIN Code: 400069
-</p>
+    <h2>
+      WE DIDN'T BUILD
+      <span>JUST ANOTHER BOTTLE.</span>
+    </h2>
 
-</div>
+    <div class="promise-divider"></div>
 
-<div class="info-card">
+    <p class="promise-main">
+      WE BUILT A NEW WAY
+      <br>
+      TO EXPERIENCE WATER.
+    </p>
 
-<h3>Customer Support</h3>
+    <p class="promise-description">
+      From cooling to comfort. From convenience to connectivity.
+      ChillMate is engineered to transform an everyday essential
+      into an intelligent, multi-functional experience.
+    </p>
 
-<p>
-Email:<br>
+    <div class="chillmate-dna">
 
-<a href="mailto:chillmatelegacy@gmail.com">
-chillmatelegacy@gmail.com
-</a>
+      <div class="dna-item">
+        <span>01</span>
+        <strong>INNOVATION</strong>
+      </div>
 
-</p>
+      <div class="dna-item">
+        <span>02</span>
+        <strong>COMFORT</strong>
+      </div>
 
-</div>
+      <div class="dna-item">
+        <span>03</span>
+        <strong>INTELLIGENCE</strong>
+      </div>
 
-<div class="info-card">
+      <div class="dna-item">
+        <span>04</span>
+        <strong>DESIGN</strong>
+      </div>
 
-<h3>Business Hours</h3>
+      <div class="dna-item">
+        <span>05</span>
+        <strong>IMPACT</strong>
+      </div>
 
-<p>
-Monday - Saturday<br>
-9:00 AM - 6:00 PM IST
-</p>
+    </div>
 
-</div>
+    <div class="promise-final">
 
-</div>
+      <h3>
+        KEEP IT COOL.
+        <span>KEEP IT SMART.</span>
+        KEEP MOVING.
+      </h3>
+
+      <div class="promise-logo">
+        CHILL<span>MATE</span><sup>™</sup>
+      </div>
+
+      <p>
+        ENGINEERED FOR TOMORROW
+      </p>
